@@ -1,0 +1,82 @@
+body {
+  background-image: url("../img/backgroundImage3.png");
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+.filters {
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  background: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.scene {
+  width: 325px;
+  height: 375px;
+  margin: 20px 0;
+  perspective: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  border-color: cadetblue;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.card-title {
+  padding-top: 12px;
+  font-size: 18pt;
+}
+
+.card-characterInfo {
+  margin: 10px 10px
+}
+
+.card-text-line {
+  line-height: 20pt;
+  font-size: 14pt;
+  margin-top: 18px;
+}
+
+.card.is-flipped {
+  transform: rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 18pt;
+  color: black;
+  font-size: 14pt;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  text-align: center;
+}
+
+.card__face--back {
+  text-align: left;
+  transform: rotateY(-180deg);
+}

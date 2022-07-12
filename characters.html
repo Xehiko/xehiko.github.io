@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>BrBadInfo</title>
+  <meta name="description" content="BrBadInfo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/characters.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body onload="createPagination()">
+
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BrBadInfo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" href="index.html">Информация о сериале</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="characters.html">Персонажи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" href="quotes.html">Цитаты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="row justify-content-md-center">
+    <div class="col-xl-9 col-sm-12 mt-4">
+      <form>
+        <div class="form-group">
+          <label for="findByNameField" class="my-2" style="color: white; font-size: 18pt; font-weight: lighter">Поиск персонажа по имени</label>
+          <div class="input-group">
+            <input type="search" class="form-control" autocomplete="off" id="findByNameField"
+                   onkeydown="if(event.keyCode===13){return false;}" placeholder="Начните вводить имя" >
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-xl-9 col-sm-12 mt-3">
+      <div class="row" id="charactersCards">
+
+      </div>
+      <div class="row">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center" id="paginationList">
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/characters.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
