@@ -1,7 +1,7 @@
 @media only screen {
   body {
     background-image: url("../img/backgroundImage.png");
-    background-position-x: 350px;
+    background-position-x: 400px;
     background-attachment: fixed;
     background-size: 100%;
   }
