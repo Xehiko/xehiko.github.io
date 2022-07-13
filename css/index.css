@@ -15,16 +15,6 @@
   overflow-y: auto;
 }
 
-@media only screen and (max-width: 992px) {
-  .textBlock {
-    width: 100%;
-    height: 100%;
-    background: white;
-    outline: 2px solid #000000;
-    overflow-y: auto;
-  }
-}
-
 .textBlock h1 {
   font-size: 24pt;
   line-height: 31pt;
@@ -62,7 +52,14 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .textBlock .img-container .img-content-bottom {
+  .textBlock {
+    width: 100%;
+    height: 100%;
+    background: white;
+    outline: 2px solid #000000;
+    overflow-y: auto;
+  }
+  .img-content-bottom {
     display: none;
   }
 }
