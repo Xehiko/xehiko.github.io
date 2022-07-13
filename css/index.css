@@ -5,41 +5,55 @@ body {
   background-size: 100%;
 }
 
-.left-side-text {
+.textBlock {
   width: 50%; height: 100%;
   background: white;
   outline: 2px solid #000000;
   overflow-y: auto;
 }
 
-.left-side-text h1 {
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url("../img/backgroundImage.png");
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+  .textBlock{
+    width: 100%; height: 100%;
+    background: white;
+    outline: 2px solid #000000;
+    overflow-y: auto;
+  }
+}
+
+.textBlock h1 {
   font-size: 24pt;
   line-height: 31pt;
   padding-top: 75px;
   text-align: center;
 }
 
-.left-side-text .textSpace {
+.textBlock .textSpace {
   width: auto;
   margin-left: 12%;
   margin-right: 12%;
   text-align: justify;
 }
 
-.left-side-text .textSpace p {
+.textBlock .textSpace p {
   margin-top: 18pt;
   text-indent: 30px;
   font-size: 14pt;
 }
 
-.left-side-text .img-container {
+.textBlock .img-container {
   position: relative;
   max-width: 80%; /* Maximum width */
   margin: 0 auto; /* Center it */
   cursor: pointer;
 }
 
-.left-side-text .img-container .img-content-bottom {
+.textBlock .img-container .img-content-bottom {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgba(0, 0, 0, 0.3); /* Black background with 0.3 opacity */
