@@ -1,8 +1,10 @@
-body {
-  background-image: url("../img/backgroundImage.png");
-  background-position-x: 400px;
-  background-attachment: fixed;
-  background-size: 100%;
+@media only screen {
+  body {
+    background-image: url("../img/backgroundImage.png");
+    background-position-x: 400px;
+    background-attachment: fixed;
+    background-size: 100%;
+  }
 }
 
 .textBlock {
@@ -57,4 +59,10 @@ body {
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   cursor: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .textBlock .img-container .img-content-bottom {
+    max-height: 20%;
+  }
 }
