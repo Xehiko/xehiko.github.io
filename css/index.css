@@ -60,4 +60,7 @@
     outline: 2px solid #000000;
     overflow-y: auto;
   }
+  .img-content-bottom {
+    max-height: 20px;
+  }
 }
