@@ -6,20 +6,17 @@ body {
 }
 
 .textBlock {
-  width: 50%; height: 100%;
+  width: 50%;
+  height: 100%;
   background: white;
   outline: 2px solid #000000;
   overflow-y: auto;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    background-image: url("../img/backgroundImage.png");
-    background-attachment: fixed;
-    background-size: 100%;
-  }
-  .textBlock{
-    width: 100%; height: 100%;
+@media only screen and (max-width: 992px) {
+  .textBlock {
+    width: 100%;
+    height: 100%;
     background: white;
     outline: 2px solid #000000;
     overflow-y: auto;
