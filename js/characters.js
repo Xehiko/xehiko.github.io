@@ -3,7 +3,7 @@ const charactersURL = "https://www.breakingbadapi.com/api/characters";
 const charactersCards = document.getElementById('charactersCards')
 const paginationList = document.getElementById('paginationList')
 
-const cardsOnPage = 12; // карточек на странице
+const cardsOnPage = 15; // карточек на странице
 const totalCharacters = 62; // всего персонажей
 
 let currentPage = 1;  // текущая страница

@@ -80,3 +80,8 @@ body {
   text-align: left;
   transform: rotateY(-180deg);
 }
+
+#paginationList {
+  display: flex;
+  flex-wrap: wrap;
+}
